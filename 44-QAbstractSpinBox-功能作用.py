@@ -19,6 +19,11 @@ class MyQAbstractSpinBox(QAbstractSpinBox):
 
     def stepEnabled(self):
         # 0 -- 9
+        if not self.text():
+            self.lineEdit().setText('0')
+        if not (self.text().replace('-','')).isdigit() and self.text()[-1]!='-':
+            self.lineEdit().setText('0')
+
         current_num = int(self.text())
         if current_num == 0:
             return QAbstractSpinBox.StepUpEnabled
@@ -42,12 +47,34 @@ class MyQAbstractSpinBox2(QAbstractSpinBox):
         self.lineEdit().setText(str(num))
 
     def stepEnabled(self):
+        if not self.text():
+            self.lineEdit().setText('0')
+        if not (self.text().replace('-','')).isdigit() and self.text()[-1]!='-':
+            self.lineEdit().setText('0')
         return QAbstractSpinBox.StepUpEnabled | QAbstractSpinBox.StepDownEnabled
 
     def stepBy(self,p_int):
         print(p_int)
         current_num = int(self.text())+p_int
         self.lineEdit().setText(str(current_num))
+
+    def validate(self,p_str,p_int):
+        """
+        :param p_str: 文本框内容
+        :param p_int: 光标位置
+        :return: (枚举值,文本框内容,光标位置)
+        """
+        num = int(p_str)
+        if num<18:
+            return (QValidator.Intermediate,p_str,p_int)
+        elif num <=180:
+            return (QValidator.Acceptable,p_str,p_int)
+        else:
+            return (QValidator.Invalid,p_str,p_int)
+
+    def fixup(self,p_str):
+
+        return '18'
 
 
 
@@ -64,6 +91,8 @@ class Window(QWidget):
         self.abs = abs
         abs.resize(150,50)
         abs.move(150,50)
+
+        abs.editingFinished.emit(lambda:print('结束编辑'))
 
         # abs.setAccelerated(True)
         # print(abs.isAccelerated())
@@ -90,6 +119,11 @@ class Window(QWidget):
         self.abs.setFrame(False)
 
         # self.abs.clear()
+
+        self.abs.setButtonSymbols(QAbstractSpinBox.NoButtons)
+
+
+
 
 
 if __name__ == '__main__':
