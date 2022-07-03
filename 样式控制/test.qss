@@ -1,0 +1,117 @@
+/*
+QLabel#l1 {
+  background-color:gray;
+}
+QLabel#l1:hover {
+  background-color:orange;
+}
+QPushButton#b2{
+  background-color:cyan;
+  border:6px dotted yellow;
+}
+*/
+
+
+/*
+* {
+  background-color:gray;
+}
+*/
+
+/*
+Btn {
+  background-color:gray;
+}
+*/
+
+
+/* 不包括子类 */
+/*
+.QPushButton{
+  background-color:gray;
+}
+*/
+
+/*
+#pink {
+  background-color:pink;
+}
+*/
+
+/*
+属性选择器
+.QLabel[notice_level]{
+  background-color:pink;
+}
+
+.QLabel[notice_level='error']{
+  border:3px solid red;
+}
+
+.QLabel[notice_level='warning']{
+  border:3px solid yellow;
+}
+*/
+/*
+空格 后代选择器
+>   子选择器
+ */
+QWidget#box2>QLabel,#btn2,#btn1{
+  background-color:pink;
+}
+
+QPushButton:hover{
+  border:2px solid red;
+}
+
+
+QPushButton:pressed{
+  border:2px dotted orange;
+}
+
+
+/*子控件选择器*/
+QCheckBox::indicator{
+  width:20px;
+  height:20px;
+}
+/*
+QCheckBox::indicator:checked{
+  image:url('xxx.png');
+}
+QCheckBox::indicator:unchecked{
+  image:url('open.png');
+}
+ */
+QCheckBox::indicator:on{
+  image:url('xxx.png');
+}
+QCheckBox::indicator:off{
+  image:url('open.png');
+}
+QCheckBox::indicator:indeterminate{
+  image:url('rose.png');
+}
+QCheckBox:checked:hover{
+  background-color:red;
+}
+
+
+QWidget:focus{
+  border:2px dotted green
+}
+
+QWidget:disabled{
+  font-size:26px;
+  background-color:orange;
+}
+QWidget:enabled{
+  font-size:16px;
+  background-color:lightgray;
+}
+
+
+
+
+
+
