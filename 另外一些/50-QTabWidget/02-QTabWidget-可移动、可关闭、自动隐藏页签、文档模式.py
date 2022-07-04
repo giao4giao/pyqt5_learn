@@ -39,13 +39,24 @@ class Window(QWidget):
 
         def close_tab(index):
             """真正关闭标签页的槽函数"""
-            tw.tabBar().removeTab(index)
+            widget = tw.widget(index)
+            widget.setParent(None)
+            # tw.tabBar().removeTab(index)
+            # print(widget)
+            print(self.children())
+
+
+            # print(tw.tabBar().count())
+            # print(tw.tabBar().children())
+            # print(tw.currentWidget())
+            # print(tw.tabBar())
+            # QTabBar().removeTab()
 
         tw.tabCloseRequested.connect(close_tab)  # 连接关闭的信号与槽
 
         # -----自动隐藏页签-------
         # 默认为False，即使只剩一个标签页，页还会保留页签
-        tw.setTabBarAutoHide(True)  # 当只剩一个标签页的时候就已经隐藏了页签
+        # tw.setTabBarAutoHide(True)  # 当只剩一个标签页的时候就已经隐藏了页签
 
         # -----文档模式---------
         # 此属性设置为True时，不会呈现选项卡部件框架，即选项卡页面和其后的窗口等页面无框架区分看起来是一个整体。

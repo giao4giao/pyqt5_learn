@@ -24,6 +24,7 @@ class DockDemo(QMainWindow):
         self.setCentralWidget(QLineEdit())
         self.items.setFloating(True)
         self.addDockWidget(Qt.RightDockWidgetArea, self.items)
+        # self.addDockWidget(Qt.NoDockWidgetArea,self.items)
 
 
 if __name__ == "__main__":
