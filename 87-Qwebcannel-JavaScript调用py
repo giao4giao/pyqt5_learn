@@ -1,0 +1,12 @@
+#!/usr/bin/env python
+# encoding: utf-8
+"""
+.................................
+    author: qwq
+    version: 3.9
+    file: 87-JavaScript调用PythonAPI计算阶乘.py
+    time: 2022/7/4 21:37
+    software: PyCharm
+..................................
+"""
+#TODO
