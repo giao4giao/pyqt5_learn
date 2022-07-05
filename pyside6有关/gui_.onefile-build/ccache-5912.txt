@@ -1,0 +1,68 @@
+[2022-07-05T19:51:13.858545 13064] === CCACHE 4.3 STARTED =========================================
+[2022-07-05T19:51:13.858545 13064] Config: (default) absolute_paths_in_stderr = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) base_dir = 
+[2022-07-05T19:51:13.858545 13064] Config: (environment) cache_dir = C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache
+[2022-07-05T19:51:13.858545 13064] Config: (default) compiler = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) compiler_check = mtime
+[2022-07-05T19:51:13.858545 13064] Config: (default) compiler_type = auto
+[2022-07-05T19:51:13.858545 13064] Config: (default) compression = true
+[2022-07-05T19:51:13.858545 13064] Config: (default) compression_level = 0
+[2022-07-05T19:51:13.858545 13064] Config: (default) cpp_extension = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) debug = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) debug_dir = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) depend_mode = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) direct_mode = true
+[2022-07-05T19:51:13.858545 13064] Config: (default) disable = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) extra_files_to_hash = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) file_clone = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) hard_link = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) hash_dir = true
+[2022-07-05T19:51:13.858545 13064] Config: (default) ignore_headers_in_manifest = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) ignore_options = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) inode_cache = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) keep_comments_cpp = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) limit_multiple = 0.8
+[2022-07-05T19:51:13.858545 13064] Config: (environment) log_file = D:\project\pyqt5_learn\pyside6有关\gui_.onefile-build\ccache-5912.txt
+[2022-07-05T19:51:13.858545 13064] Config: (default) max_files = 0
+[2022-07-05T19:51:13.858545 13064] Config: (default) max_size = 5.0G
+[2022-07-05T19:51:13.858545 13064] Config: (default) path = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) pch_external_checksum = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) prefix_command = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) prefix_command_cpp = 
+[2022-07-05T19:51:13.858545 13064] Config: (default) read_only = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) read_only_direct = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) recache = false
+[2022-07-05T19:51:13.858545 13064] Config: (default) run_second_cpp = true
+[2022-07-05T19:51:13.858545 13064] Config: (environment) sloppiness = include_file_mtime, include_file_ctime
+[2022-07-05T19:51:13.858545 13064] Config: (default) stats = true
+[2022-07-05T19:51:13.858545 13064] Config: (default) temporary_dir = C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp
+[2022-07-05T19:51:13.858545 13064] Config: (default) umask = 
+[2022-07-05T19:51:13.859052 13064] Command line: D:\Program Files\mingw64\bin\ccache.exe D:\Program Files\mingw64\bin\gcc.exe -o static_src\OnefileBootstrap.o -c -flto -fuse-linker-plugin -fno-fat-lto-objects -std=c11 -fvisibility=hidden -fwrapv -pipe -fpartial-inlining -ftrack-macro-expansion=0 -Wno-deprecated-declarations -fno-var-tracking -Wno-misleading-indentation -fcompare-debug-second -O3 -D_WIN32_WINNT=0x0501 -D__NUITKA_NO_ASSERT__ -D_NUITKA_WINMAIN_ENTRY_POINT -D_NUITKA_PLUGIN_MULTIPROCESSING_ENABLED=1 -I. -ID:\project\pyqt5_learn\venv\lib\site-packages\nuitka\build\include -ID:\project\pyqt5_learn\venv\lib\site-packages\nuitka\build\static_src -ID:\project\pyqt5_learn\venv\lib\site-packages\nuitka\build\inline_copy\zstd static_src\OnefileBootstrap.c
+[2022-07-05T19:51:13.860452 13064] Hostname: unknown
+[2022-07-05T19:51:13.860463 13064] Working directory: D:/project/pyqt5_learn/pyside6有关/gui_.onefile-build
+[2022-07-05T19:51:13.860467 13064] Compiler type: gcc
+[2022-07-05T19:51:13.860726 13064] Source file: static_src\OnefileBootstrap.c
+[2022-07-05T19:51:13.860758 13064] Object file: static_src\OnefileBootstrap.o
+[2022-07-05T19:51:13.860838 13064] Trying direct lookup
+[2022-07-05T19:51:13.861024 13064] Looking for result name in C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/f/1d0pfncl1jk39nj0vb1odov92u7l9diM
+[2022-07-05T19:51:13.869617 13064] Did not find result name in manifest
+[2022-07-05T19:51:13.872244 13064] Running preprocessor
+[2022-07-05T19:51:14.719293 13064] Got result name from preprocessor
+[2022-07-05T19:51:14.719380 13064] No result with name fb3akmjp1mvjhd0aab5uqksqbcereo8i2 in the cache
+[2022-07-05T19:51:14.719391 13064] Running real compiler
+[2022-07-05T19:51:16.097513 13064] Using default compression level 1
+[2022-07-05T19:51:16.097582 13064] Storing result static_src\OnefileBootstrap.o
+[2022-07-05T19:51:16.097617 13064] Storing embedded file #0 .o (519273 bytes) from static_src\OnefileBootstrap.o
+[2022-07-05T19:51:16.099391 13064] Stored in cache: C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/b/3akmjp1mvjhd0aab5uqksqbcereo8i2R
+[2022-07-05T19:51:16.099515 13064] Adding result name to C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/f/1d0pfncl1jk39nj0vb1odov92u7l9diM
+[2022-07-05T19:51:16.103716 13064] Using default compression level 1
+[2022-07-05T19:51:16.104962 13064] Result: cache miss
+[2022-07-05T19:51:16.105153 13064] Acquired lock C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-07-05T19:51:16.106008 13064] Releasing lock C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/9/stats.lock
+[2022-07-05T19:51:16.106342 13064] Acquired lock C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-07-05T19:51:16.107177 13064] Releasing lock C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/f/stats.lock
+[2022-07-05T19:51:16.107367 13064] Unlink C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stderr.xW8xas
+[2022-07-05T19:51:16.107503 13064] Unlink C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.stdout.f3SQFG
+[2022-07-05T19:51:16.107638 13064] Unlink C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stderr.fua40L
+[2022-07-05T19:51:16.107777 13064] Unlink C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.9TXftF.i
+[2022-07-05T19:51:16.108752 13064] Unlink C:\Users\Handsome\AppData\Local\Nuitka\Nuitka\Cache\ccache/tmp/tmp.cpp_stdout.9TXftF
